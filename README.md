@@ -20,6 +20,7 @@ addNode:
                   - returns true if node is successfully added 
           
 addEdge:
+
             in: 
                   - unique id number for the new edge, 
                   - label of source node,
@@ -35,12 +36,14 @@ addEdge:
                   - returns true if edge is successfully added 
             
 delNode:
+
             in: string (label for the node to remove)
       
             out: boolean
                   - return false if the node does not exist
                   - return true if the node is found and successfully removed
 delEdge:
+
             in: 
                   - string label for source node
                   - string label for destination node
@@ -49,9 +52,11 @@ delEdge:
                   - return false if the edge does not exist
                   - return true if the edge is found and successfully removed
 numNodes:
+
             in: nothing
       
             return: integer 0 or greater (reports how many nodes are in the graph)
 numEdges:
+
             in: nothing
             return: integer 0 or greater (reports how many edges are in the graph)
